@@ -103,4 +103,5 @@ async function search() {
         </div>
         `;
   }
+    document.getElementById("input").value = "";
 }
