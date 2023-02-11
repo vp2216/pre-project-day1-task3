@@ -2,6 +2,11 @@ const loading = document.createElement("img");
 loading.setAttribute("src", "./spin.gif");
 loading.style.width = "15vw"
 
+const titleInput = document.getElementById("input");
+titleInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") search();
+});
+
 async function search() {
     const title = document.getElementById("input").value;
     const show = document.getElementById("showMovie");
